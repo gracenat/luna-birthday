@@ -1,59 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="./styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Luna's Birthday Invitation</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
-</head>
-<body>
-    <id>
-        <div class="jumbotron">
-            <marquee class="display-4" behavior="scroll" direction="left" scrollamount="20">Luna's Birthday</marquee>
-            <a class="btn btn-light" href="#invitation" role="button">OPEN INVITATION</a>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <marquee class="display-4" behavior="scroll" direction="left" scrollamount="20">Let's celebrate Luna's birthday!</marquee>
+            <a class="btn btn-light" href="#invitation" role="button">Open invitation</a>
         </div>
-    </id>
-    <id>
-        <a id="invitation"></a>
-        <section>
-            <div class="jumbotron-1">
-                <h2 class="display-4">YOU ARE INVITED TO:</h2>
-                <h1 class="display-4">LUNA'S<br>BIRTHDAY<br>PARTY</h1>
-                <p class="display-4">27.03.2021</p>
-                <a class="btn btn-light" target="blank" href="https://www.google.com/maps/place/Sarlok+Homes+Cafe+%26+Resto/@1.3220129,124.8182648,15z/data=!4m5!3m4!1s0x0:0x42f05721717220a5!8m2!3d1.3220129!4d124.8182648" role="button">DIRECTION</a>
-              </div>
-        </section>
-        <section>
-            <div class="jumbotron-2">
-                <h2 class="display-4">Confirm your attendance<br>
+    </div>
+
+    <section>
+        <div id="invitation">
+            <div class="invitation">
+                <h2>You are invited to:</h2>
+                <h1>LUNA'S<br>BIRTHDAY<br>PARTY</h1>
+                <p>27.03.2021</p>
+                <a class="btn btn-light" target="blank" href="https://www.google.com/maps/place/Sarlok+Homes+Cafe+%26+Resto/@1.3220129,124.8182648,15z/data=!4m5!3m4!1s0x0:0x42f05721717220a5!8m2!3d1.3220129!4d124.8182648" role="button">Direction</a>
+            </div>
+            <div class="form">
+                <h2>Confirm your attendance<br>
                     by clicking the button below<br>
                     and fill in the form</h2>
-                <a class="btn btn-light" target="blank" href="https://forms.gle/nn3Ap1EJKadT6Z3e8" role="button">FORM</a>
-              </div>
-        </section>
-        <section>
-            <div class="jumbotron-3">
-                <div>
-                    <img src="./assets/close.jpg" alt="birthday">
+                <a class="btn btn-light" target="blank" href="https://forms.gle/nn3Ap1EJKadT6Z3e8" role="button">Form</a>
+            </div>
+            <div class="row closing">
+                <div class="col-lg-6">
+                    <img src="assets/close.jpg" alt="Space" class="img-fluid">
                 </div>
-                <div>
-                    <h2 class="display-4">I cannot wait to see you<br>in my birthday party!</h2>
-                    <br>
-                    <br>
-                    <h2 class="display-4">Love, Luna</h2>
+                <div class="col-lg-5">
+                    <h3>I cannot wait to see you<br>in my birthday party!</h3>
+                    <p><i> - Love, Luna</i></p>
                 </div>
             </div>
-        </section>
-        <section>
-            <footer>
-                Made by Grace
-            </footer>
-        </section>
-    </id>
-<script src="script.js"></script>
-</body>
+        </div>
+    </section>
+    <div class="row footer">
+        <div class="col text-center">
+          <p>© 2021 Grace Nathasya</p>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="script.js"></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
 </html>
